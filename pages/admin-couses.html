@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../style/admin-total.css">
+    <link rel="stylesheet" href="../style/admin-courses.css">
+    <link rel="stylesheet" href="../style/admin-category.css">
+    <style>
+        body{
+            height: 2000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <ul class="list-infor">
+         <li class="list-item">
+             <i class='bx bxs-folder-open'></i>
+             <span>Danh mục</span>
+         </li>
+         <li class="list-item">
+             <i class='bx bxs-dashboard'></i>
+             <span>Khóa học</span>
+         </li>
+         <li class="list-item">
+             <i class='bx bx-user'></i>
+            <span>Người dùng</span>
+         </li>
+         <li class="list-item">
+             <i class='bx bx-lock'></i>
+             <span>Log out</span>
+         </li>
+        </ul>
+     </div> 
+     <a href="../pages/admin-content.html"></a>
+     <div class="course-section">
+        <h3>Quản lí khoá học</h3>
+        <form action="" class="course-form">
+            <div class="list-item-Course">
+                <label for="">Tên khóa học</label>
+                <input type="text" class="name-Course" placeholder="Nhập tên khóa học" name="nameCourse">
+                <span class="message-error"></span>
+            </div>
+            <div class="list-item-Course">
+                <label for="">Danh mục</label>
+                <select name="Category" id="" class="select-input" value="">
+                   <option value="Chọn danh mục">Chọn danh mục</option>
+                </select>
+                <span class="message-error"></span>
+            </div>
+            <div class="list-item-Course">
+                <label for="">Gía</label>
+                <input type="text" class="price-Course" placeholder="Nhập giá của khóa học" name="priceCourse">
+                <span class="message-error"></span>
+            </div>
+            <div class="list-item-Course">
+                <label for="">Hình ảnh</label>
+                <input type="text" class="image-Course" placeholder="Nhập đường link của ảnh" name="imageCourse"> 
+                <span class="message-error"></span>
+            </div>
+            <div class="list-item-Course describe-item">
+                <label for="">Mô tả sản phẩm</label>
+                <input type="text" class="describe-Course" name="describe">
+                <span class="message-error"></span>
+            </div>
+            <button>Submit</button>
+        </form>
+        <div class="render-courses-part"> 
+            <div class="title-category-box">
+                <h3>Khóa học</h3> 
+            </div>
+            <table class="table-courses">
+                <tr class="title-table">
+                    <th>id</th>
+                    <th>Tên khóa học</th>
+                    <th>Hình ảnh</th>
+                    <th>Gía</th>
+                    <th>Nội dung</th>
+                    <th>Actions</th>
+                </tr>
+                <tbody class="body-courses"></tbody>
+            </table>     
+        </div>
+     </div> 
+     <img src="" alt="">
+</body>
+<script src="../js/validate.js"></script>
+<script src="../js/course-ad.js"></script>
+</html>

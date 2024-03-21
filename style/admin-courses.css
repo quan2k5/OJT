@@ -1,0 +1,113 @@
+.course-section{
+    width: 100%;
+    padding: 20px;
+}
+.course-section .course-form{
+    padding: 10px;
+    width: 70%;
+    gap:10px;
+}
+.course-section .course-form .list-item-Course{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.course-section .course-form .list-item-Course label{
+    font-size: large;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.815);
+}
+.course-section .course-form .list-item-Course input,select{
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid gray;
+    padding-left: 10px;
+    font-size: medium;
+}
+.describe-Course{
+    height: 150px !important;
+}
+.course-section .course-form .list-item-Course select option{
+    font-size: medium;
+    color: rgba(0, 0, 0, 0.815);
+}
+.red{
+    border: 1.5px solid red !important;
+}
+.message-error{
+    color: red;
+    font-size: large;
+}
+.course-section .render-courses-part{
+    width: 100%;
+    padding: 10px;
+}
+.course-section .render-courses-part .table-courses{
+    border-collapse: collapse;
+    width: 100%;
+}
+.course-section .render-courses-part .table-courses .title-table{
+    background-color: rgba(0, 128, 0, 0.767);
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+.course-section .render-courses-part .table-courses .title-table th:last-child{
+    width: 250px;
+}
+.course-section .render-courses-part .table-courses .title-table th:first-child{
+    width: 100px;
+}
+.course-section .render-courses-part .table-courses .body-courses tr{
+    height:  80px;
+}
+.course-section .render-courses-part .table-courses .body-courses tr:nth-child(even){
+    background-color: rgba(128, 128, 128, 0.432);
+
+}
+tr,td{
+    border: none;
+}
+.course-section .render-courses-part .table-courses .body-courses td{
+  text-align: center;
+}
+.course-section .render-courses-part .table-courses .body-courses button{
+    width: 70px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    margin: auto;
+    cursor: pointer;
+}
+.course-section .render-courses-part .table-courses .body-courses .edit-courses{
+    background-color: rgba(0, 128, 0, 0.849);
+}
+.course-section .render-courses-part .table-courses .body-courses .erase-category{
+    background-color: red;
+}
+.course-section .render-courses-part .table-courses .body-courses .watching-courses{
+    background-color:blue ;
+}
+.course-section .render-courses-part .table-courses .body-courses img{
+    width: 80px;
+    height: 40px;
+}
+.course-section .render-courses-part .table-courses .body-courses tr td a{
+    color: royalblue;
+    text-decoration: none;
+    transition: .2s;
+}
+.course-section .render-courses-part .table-courses .body-courses tr td a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+  
